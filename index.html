@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="./images/logo-no-background.png" alt="Logo" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portoflio">portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Front-End Developer</p>
+          <h1>
+            Hi, Im <span> Sobhi </span> <br />
+            Mohamed From Assuit
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!------------ About--------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/sobhi.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              My name is Sobhi Mohamed, I study in the fourth year at the Faculty of Computers and Information. I started studying the web developer course 3 months ago.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="ope('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="ope('experience')">Experience</p>
+              <p class="tab-links" onclick="ope('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Front-End</span><br />Designing web/App interfaces
+                </li>
+                <li><span>Self Skills</span><br />Doing with office App</li>
+                <li>
+                  <span>English</span><br />
+                  Very Good With course English
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2021 - Current</span><br />Designing web/App interfaces
+                </li>
+                <li><span>2019 - 2021</span><br />Doing with office App</li>
+                <li>
+                  <span>2016 - 2022</span><br />
+                  Very Good With course English
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2020</span><br />Designing web/App interfaces</li>
+                <li><span>2019</span><br />Doing with office App</li>
+                <li>
+                  <span>2016</span><br />
+                  Very Good With course English
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------- Services--------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              I started studying a web developer course 3 months ago,
+              I did a lot of projects and I'm still learning now.
+            </p>
+            <a class="ccs" href="https://www.interaction-design.org/literature/topics/web-design">Learn More</a>
+          </div>
+          <div>
+            <i class="fas fa-skull"></i>
+            <h2>Self Study</h2>
+            <p>
+              I started self-learning more than two years ago and I am still learning until I gain a lot of experience in this field besides the field Front-End.
+            </p>
+            <a class="ccs" href="https://www.upskilled.edu.au/skillstalk/benefits-of-self-study">Learn More</a>
+          </div>
+          <div>
+            <i class="fab fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              As for the design of applications, I did not have enough experience, but later I hope to learn and apply this field.
+            </p>
+            <a class="ccs" href="https://xd.adobe.com/ideas/principles/app-design/">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------portoflio----------- -->
+    <div id="portoflio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./images/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                The app connects you to the talented people around the world.
+                Download it from App store.
+              </p>
+              <a href="https://telegram.ar.uptodown.com/android/download"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/work-2.png" alt="" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                The app connects you to the talented people around the world.
+                Download it from Music store.
+              </p>
+              <a href="https://www.dndnha.com/dl/154"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/work-3.png" alt="" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                The app connects you to the talented people around the world.
+                Download it from App store.
+              </p>
+              <a href="https://www.shopify.com/free-trial/ecommerce/short?term=ecommerce%20shopping&adid=566002055962&campaignid=15436644133&gclid=CjwKCAjw7eSZBhB8EiwA60kCW_8EOUY5TSafpMOMSnYK1pSHjPDE4gEByy8OJqIdGkbASkDv5zLvVhoCDuEQAvD_BwE&cmadid=516752332;cmadvertiserid=10730501;cmcampaignid=26990768;cmplacementid=324494362;cmcreativeid=163722649;cmsiteid=5500011"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://www.geeksforgeeks.org/web-development/" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- -------contact------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fas fa-paper-plane mail" "></i>
+              sobhimohamed125@gmail.com
+            </p>
+            <p><i class="fas fa-phone-square-alt"></i> 01110280775</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=100019730844909"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a
+                href="https://twitter.com/Sobhi_Mo7amed?t=xrMOGDEbAXagaEcrUDmQfg&s=08"
+                ><i class="fab fa-twitter-square"></i
+              ></a>
+              <a
+                href="https://api.whatsapp.com/send/?phone=201110280775&text&type=phone_number&app_absent=0"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a
+                href="https://www.linkedin.cn/incareer/in/ACoAADOutskBFi-PqKwIVM_WyBhX5xct_GeXDEA"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="muCV.pdf" download="image" id="download" class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                id=""
+                placeholder="Your Message"
+                rows="10"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright <i class="far fa-copyright"></i> Sobhi. Made With
+          <i class="fas fa-heart"></i> by Easy Tutorials
+        </p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
